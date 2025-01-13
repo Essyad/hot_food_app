@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Food Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="text-center py-3 bg-danger text-white">
+        <h1>Hot Food Menu</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-4">
+        <!-- Menu Section -->
+        <div id="menu-container" class="row">
+            <!-- Menu items will be dynamically added here -->
+        </div>
+
+        <!-- Cart Section -->
+        <div id="cart-section" class="mt-5">
+            <h2>Your Order</h2>
+            <div id="cart-items"></div>
+            <h3>Total: <span id="cart-total">0 MRU</span></h3>
+        </div>
+
+        <!-- User Details Form -->
+        <div id="user-details" class="mt-4">
+            <h2>Your Details</h2>
+            <form id="order-form">
+                <div class="mb-3">
+                    <label for="user-name" class="form-label">Name</label>
+                    <input type="text" id="user-name" class="form-control" placeholder="Enter your name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="user-phone" class="form-label">Phone Number</label>
+                    <input type="tel" id="user-phone" class="form-control" placeholder="Enter your phone number" required>
+                </div>
+                <div class="mb-3">
+                    <label for="user-location" class="form-label">Location</label>
+                    <select id="user-location" class="form-select" required>
+                        <option value="" disabled selected>Select your location</option>
+                        <option value="Annex">Annex</option>
+                        <option value="Siege">Siege</option>
+                    </select>
+                </div>
+                <button type="button" id="order-btn" class="btn btn-success">Send Order via WhatsApp</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-dark text-white">
+        <p>&copy; 2025 Hot Food</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
